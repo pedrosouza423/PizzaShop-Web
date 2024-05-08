@@ -1,10 +1,8 @@
-import { X } from 'lucide-react'
 import {
   CartesianGrid,
   Line,
   LineChart,
   ResponsiveContainer,
-  Tooltip,
   XAxis,
   YAxis,
 } from 'recharts'
@@ -28,7 +26,7 @@ const data = [
   { date: '07/01', revenue: 2200 },
 ]
 
-export const RevenueChat = () => {
+export const RevenueChart = () => {
   return (
     <Card className="col-span-6">
       <CardHeader className="flex-row items-center justify-between pb-8">
@@ -55,6 +53,9 @@ export const RevenueChat = () => {
                 })
               }
             />
+
+            <CartesianGrid className="stroke-muted" vertical={false} />
+
             <Line
               type="linear"
               stroke={colors.violet[500]}
