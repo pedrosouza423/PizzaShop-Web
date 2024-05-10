@@ -7,6 +7,6 @@ import { App } from './app'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <App />A
   </React.StrictMode>,
 )
